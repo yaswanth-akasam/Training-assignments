@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean id="employee" class="springproject.model.Employee" scope = "singleton">
+       <property name="empid" value="1001"/>
+       <property name="name" value="Ashwin"/>
+       <property name="dept" value="Manager"/>
+   </bean>
+    <bean id="address" class="springproject.model.Address" scope = "singleton">
+       <property name="dno" value="10120"/>
+       <property name="street" value="swatha nagar"/>
+       <property name="city" value="vishakapatanam"/>
+   </bean>
+    <bean id="person" class="springproject.model.Person" scope = "singleton" autowire="byName">
+       <property name="pid" value="10120"/>
+       <property name="name" value="swatha nagar"/>
+      <!-- <property name="address"  ref = "address"/>-->
+   </bean>
+   <bean id="student" class="springproject.model.Student" scope = "singleton">
+       <property name="htno" value="504"/>
+       <property name="name" value="akay kholi"/>
+       <property name="branch" value = "CSE"/>
+   </bean>
+   
+   <bean id="stu" class="springproject.model.Student" 
+			init-method="init" destroy-method="destroy">
+			
+		<constructor-arg value="80001" />
+		<constructor-arg value="Kamal" />
+		<constructor-arg value="CSE" />
+
+	</bean>
+	
+	
+	
+	
+</beans>
