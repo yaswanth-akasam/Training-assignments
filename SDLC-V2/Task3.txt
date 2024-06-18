@@ -1,0 +1,49 @@
+Waterfall Model1234:
+Advantages:
+  Simple and clear structure1.
+  Clear separation of individual phases3.
+  Easily understandable and traceable3.
+  Suitable for projects with clearly defined requirements and few changes3.
+  Emphasizes on through documentation1.
+Disadvantages:
+  Not suitable for small projects as it is expensive1.
+  Much more complex than other SDLC models1.
+  Difficulty in time management1.
+  Applicability: The Waterfall model is often used when the project requirements are well-defined and the project goals are clear1.
+Agile Model567:
+Advantages:
+  Focus on customer value5.
+  Enhanced team morale and motivation5.
+  Stakeholder collaboration5.
+  Early and continuous delivery5.
+  Delivering high-quality software5.
+Disadvantages:
+  Lack of predictability5.
+  Dependency on customer availability5.
+  Difficulty in scaling Agile for large projects5.
+  Applicability: Agile is suitable for projects with dynamic requirements and those that require frequent changes5.
+  Spiral Model891011:
+Advantages:
+  Software is produced early in the software life cycle8.
+  Risk handling is one of the important advantages8.
+  Flexibility in requirements8.
+  Good for large and complex projects8.
+Disadvantages:
+  Not suitable for small projects as it is expensive8.
+  Process is complex8.
+  Too much dependable on risk analysis8.
+  Difficulty in time management8.
+  Applicability: The Spiral model is often used for complex and large software development projects, as it allows for a more flexible and adaptable approach to software development9.
+V-Model1213141516:
+Advantages:
+Reduces risks14.
+Improves quality14.
+Better control and monitoring14.
+Enhances documentation14.
+Disadvantages:
+  Inflexibility14.
+  High initial costs14.
+  Slow delivery time14.
+
+
+

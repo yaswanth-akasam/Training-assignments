@@ -1,0 +1,21 @@
+Requirement Gathering: Mahindra Motors involves many stakeholders and suppliers around the world,
+which makes its supply chain rather complex and data-heavy1. The main requirement was to create 
+a robust online supply chain solution that would encompass the entire logistics process starting 
+with auto parts and steel suppliers and ending with subcontractors and car dealerships around the world1.
+
+Design: The design phase involved planning how to streamline data input and eliminate redundancies
+from the old supply chain management system1. The legacy system ran on the IBM AS400 server, 
+which allows for impressive flexibility, but it no longer sufficed for Mitsubishi’s growing needs1.
+
+Implementation: During the implementation phase, the team developed the new supply chain management system. 
+This involved a lot of coding and integration work1.
+
+Testing: The testing phase ensured that the system performs well across different user scenarios1. 
+Any bugs or issues found during this phase were fixed before moving on to the deployment phase1.
+
+Deployment: Once the system passed testing, it underwent deployment, where it was integrated 
+into Mitsubishi’s platform1. This phase ensured that the system was ready for use in a live environment1.
+
+Maintenance: The maintenance phase involved continuous monitoring to ensure
+the system’s performance remains optimal, and regular updates were made to improve accuracy and relevance1.
+

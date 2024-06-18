@@ -1,0 +1,53 @@
+ACID Properties of a Transaction:-
+
+ACID is an acronym that stands for Atomicity, Consistency, Isolation, and Durability
+
+1.Atomicity:- Ensuring that a transaction is treated as a single unit of operation.
+              This means that either all the operations within the transaction are completed successfullu, or non of the are.
+              if any part of the transaction is rolled back.
+2.Consistency:- Ensuring that a transaction bring the database from one valid state to another valid state.
+                Any data written to the database must be valid according to all define rules, including constraints,cascades, 
+                and triggers.
+3.Isolation :- Ensure that concurrently executed transaction do not affect each other. 
+               The intermediate state of a transaction is invisible to other transaction until the transaction from interfering with each other.
+4.Durability:- Ensure that once a transaction has been committed, it will remain so,
+               even in the case of a system failure.This means that committed data will bw saved and protected from data loss.
+
+SQL Statement to simulate a Transaction
+
+  CREATE TABLE account (
+     account_id INT PRIMARY KEY,
+     balance DECIMAL(10,2),
+     transaction_data DATETIME,
+     FOREIGN KEY (account_id) REFERENCE accounts(account_id)
+     );
+
+INSERT INTO account(account_id, balance) VALUES (1, 1000.00);
+INSERT INTO account(account_id, balance) VALUES (2, 1500.00);
+
+START TRANSACTION;
+
+SELECT * FROM account WHERE account_id = 1 FOR UPDATE;
+SELECT * FROM account WHERE account_id = 2 FOR UPDATE;
+
+UPDATE account SET balance = balance - 200 WHERE account_id = 1;
+UPDATE account SET balance = balance - 200 WHERE account_id = 2;
+
+INSERT INTO transaction (trans_id, account_id, amount, tranc_date)
+VALUES (1,1,-200, NOW()),(2,2,200,NOW());
+
+COMMIT;
+
+
+Demonstration isolation Levels
+
+SET TRANSACTION ISOLATION LEVEL READ COMMITTED;
+
+START TRANSACTION;
+SELECT balance FROM accounts WHERE account_id =1;
+
+UPDATE account SET balance = balance - 100 WHERE account_id = 1;
+COMMIT;
+
+
+

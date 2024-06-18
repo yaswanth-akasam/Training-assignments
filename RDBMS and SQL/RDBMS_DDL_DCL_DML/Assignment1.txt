@@ -1,0 +1,43 @@
+Business Scenario:
+A bookstore wants to manage its operations using a database. The bookstore sells books, and each book can have multiple authors but belongs to one category. Customers can purchase multiple books in a single order. Each order is handled by an employee, and customers can place multiple orders over time. The bookstore also keeps track of suppliers for each book.
+
+Step-by-Step ER Diagram Creation:
+Identify Entities:
+
+Book
+Author
+Category
+Customer
+Order
+OrderDetail (line items of orders)
+Employee
+Supplier
+Identify Relationships:
+
+A Book can have multiple Authors.
+An Author can write multiple Books.
+A Book belongs to one Category.
+A Category can have multiple Books.
+A Customer can place multiple Orders.
+An Order can include multiple Books (through OrderDetail).
+An Order is handled by one Employee.
+A Book can have multiple Suppliers.
+A Supplier can supply multiple Books.
+Identify Attributes:
+
+Book: BookID (PK), Title, ISBN, Price, CategoryID (FK)
+Author: AuthorID (PK), Name, Bio
+Category: CategoryID (PK), CategoryName
+Customer: CustomerID (PK), Name, Email, Phone
+Order: OrderID (PK), OrderDate, CustomerID (FK), EmployeeID (FK)
+OrderDetail: OrderDetailID (PK), OrderID (FK), BookID (FK), Quantity
+Employee: EmployeeID (PK), Name, Position
+Supplier: SupplierID (PK), Name, ContactInfo
+Establish Cardinality:
+
+Book-Author: Many-to-Many (with associative entity BookAuthor)
+Book-Category: Many-to-One
+Order-Customer: Many-to-One
+Order-OrderDetail: One-to-Many
+Order-Employee: Many-to-One
+Book-Supplier: Many-to-Many (with associative entity BookSupplier)

@@ -1,0 +1,5 @@
+  SELECT * FROM CUSTOMERS;
+
+   SELECT name, email
+   FROM customers
+   WHERE city = 'New York';

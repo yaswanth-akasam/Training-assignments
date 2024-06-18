@@ -1,0 +1,12 @@
+Requirements: This is the first phase of the SDLC. It involves gathering and documenting the needs and requirements of the system from the client or end-users. The success of the project largely depends on the clarity and completeness of the requirements.
+ 
+Design: In this phase, the system and software design is prepared from the requirement specifications.
+This helps in specifying hardware and system requirements and also helps in defining the overall system architecture.
+
+Implementation: During this phase, the designs are translated into code.
+The system is built and coding is done using suitable programming languages and technologies.
+
+Testing: After the code is developed, it is tested against the requirements to make sure that the product is solving the needs addressed and gathered during the requirements phase. This involves unit testing, integration testing, system testing, and user acceptance testing.
+ 
+Deployment: Once the product is tested and accepted by the client, it is deployed in the customer environment or released into the market.
+Maintenance: After the deployment, any modifications, changes, or enhancements are done during this phase.

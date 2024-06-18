@@ -1,0 +1,14 @@
+EGIN TRANSACTION;
+
+  INSERT INTO orders (order_id, customer_id, order_value)
+  VALUES (101, 1, '2024-05-19', 150.00);
+
+  COMMIT;
+
+  BEGIN TRANSACTION;
+
+  UPDATE products
+  SET quantity = quantity - 10
+  WHERE product_id = 1;
+
+  ROLLBACK;

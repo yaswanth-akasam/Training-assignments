@@ -1,0 +1,6 @@
+Data Recovery using Transaction Logs
+
+1.Redo Phase:- The DBMS will check the transaction log and re-apply Transaction B because it was commited
+               but not yet written to disk. This ensure the new order is correctly added to the database
+2.Undo Phase :- The DBMS will undo the effects of Tranaaction A and c because they were not commited at the time 
+               of the crash. This means any changes made by these transaction will be revert to maintain database consistency.

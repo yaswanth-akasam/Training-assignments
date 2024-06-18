@@ -1,0 +1,14 @@
+BEGIN TRANSACTION;
+
+INSERT INTO order (order_id, customer_id, order_date, order_value)
+VALUES (201, 2, '2024-05-19', 200.00);
+
+SAVEPOINT sp1;
+
+INSERT INTO orders (order_id, customer_date, order_value)
+VALUES (202, 3, '2024-05-19', 200.00);
+
+SAVEPOINT sp2;
+
+INSERT INTO orders (order_id, customer_date, order_value)
+VALUES (203, 4, '2024-05-19', 200.00);

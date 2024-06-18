@@ -1,0 +1,4 @@
+SELECT customers.customer_id, customer.name, customers.email, orders.order_id, orders.orders_date
+  FROM customers
+  INNER JOIN orders ON customers.customer_id = orders.customer_id
+  WHERE customers.region = 'west';

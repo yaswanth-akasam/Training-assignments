@@ -1,0 +1,44 @@
+Test-Driven Development (TDD)123:
+----------------------------------
+Approach: In TDD, developers write tests before writing the code for the application. The process is repeated iteratively.
+
+Benefits:
+---------
+Ensures that all code is covered by tests1.
+Helps in designing cleaner interfaces1.
+Reduces time spent on debugging1.
+Makes the code more maintainable1.
+
+Drawbacks:
+---------
+Requires changes in mindset and discipline1.
+Initial development phase can be slower due to the need to write tests1.
+Suitability: TDD is suitable for projects where requirements are clear and stable. It’s also beneficial when working on large projects with a team of developers1.
+
+Behavior-Driven Development (BDD)456:
+------------------------------------
+Approach: BDD extends TDD by writing test cases in a natural language that non-programmers and domain experts can read.
+Benefits:
+---------
+Improves communication between tech and non-tech teams4.
+Focuses on the system’s behavior4.
+Helps to develop software that meets the business and user requirements4.
+Drawbacks:
+---------
+Requires a substantial initial investment in writing test cases4.
+Can be overkill for simple projects4.
+Suitability: BDD is suitable for projects where clear communication between developers and business stakeholders is crucial. It’s also beneficial for complex projects where behavior is the primary focus4.
+
+Feature-Driven Development (FDD)78910:
+-------------------------------------
+Approach: FDD is a model-driven, short-iteration process. It begins with establishing an overall model shape, then building a features list, and finally planning by feature.
+Benefits:
+---------
+Delivers frequent, tangible, working results repeatedly7.
+Highly scalable and can be used by large teams7.
+Emphasizes quality aspects such as developing by feature and individual class (code) ownership7.
+Drawbacks:
+----------
+Not suitable for smaller projects7.
+Requires a significant amount of documentation7.
+Suitability: FDD is suitable for larger size projects or organizations, and where the scope of the project is clearly defined7.

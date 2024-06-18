@@ -1,0 +1,9 @@
+Creating a New Database User and Granting Specific Privileges
+
+CREATE USER 'new_user'@'localhost' IDENTIFIED BY 'password';
+
+GRANT SELECT, INSERT, UPDATE,DELETE ON library_db.* TO 'new_user'@'localhost';
+
+REVOKE INSERT, UPDATE ON library_db. * FROM 'new_user'@'localhost';
+
+DROP USER 'new_user'@'localhost';
